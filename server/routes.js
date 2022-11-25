@@ -40,6 +40,14 @@ router.post('/', function (req, res) {
   });
 });
 
-
-
-module.exports = router;
+router.post('/subscribe', (req, res) => {
+  const suscripcion = req.body;
+  push.addSubscription(suscripcion);
+  res.json('subscribe');
+});
+router.get('/key', (req, res) => {
+  res.json('subcribe');
+}); 
+router.post('/push', (req, res) => {
+  res.json('Key publico');
+});
