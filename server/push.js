@@ -7,7 +7,7 @@ const vapid = require('./vapid.json');
 const webpush = require('web-push');
 
 webpush.setVapidDetails(
-    'mailto:fernando.herrera85@gmail.com',
+    'mailto:horaciok300@gmail.com',
     vapid.publicKey,
     vapid.privateKey
 );
